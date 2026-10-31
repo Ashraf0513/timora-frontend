@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.SignIn-bg{
+    background-image: url(../assets/images/signin-bg.png);
+    height:120vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.SignIn-main{
+    width: 30%;
+    height:auto;
+    color: white;
+    background:linear-gradient(to right,#141A23,#0D1116);
+    margin:25px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.SignIn-title{
+    text-align: center;
+}
+
+.SignIn-title h1{
+    color: #FFD700;
+    padding-bottom:5px;
+    font-size:35px;
+}
+
+.SignIn-content{
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.SignIn-input p{
+    color: red;
+    font-size: 16px;
+}
+
+.SignIn-inputicon{
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: solid 1px #343434;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.SignIn-inputicon input{
+    padding: 6px;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.SignIn-inputicon input:focus{
+    outline: navy;
+}
+
+.SignIn-inputicon svg{
+    color:#575757;
+}
+
+.Signin-error{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.Signin-mainerror{
+    color: red;
+    font-size: 18px;
+    text-align: center;
+}
+
+.SignIn-btn{
+    padding:8px;
+    background-color: #F8D083;
+    border:none;
+    border-radius: 5px;
+    font-size:16px;
+    cursor: pointer;
+}
+
+.LogIn-link{
+    text-align: center;
+}
+
+.log{
+    color: #FFD700;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.log:hover{
+    color: aqua;
+}
+
+.LogIn-bg{
+    background-image:url(../assets/images/signin-bg.png) ;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    margin-top:75px ;
+}
+
+.LogIn-main{
+    color: white;
+    background:linear-gradient(to right,#141A23,#0D1116);
+    width: 30%;
+    padding: 10px;
+    margin: 40px 0px;
+    border-radius:10px ;
+}
+
+.LogIn-title{
+    text-align: center;
+}
+
+.LogIn-title h1{
+    color: #FFD700;
+    font-size: 35px;
+    padding: 10px 0px;
+}
+
+.LogIn-form{
+    padding-top:30px;
+    padding-left:10px ;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:20px ;
+}
+
+.LogIn-icons{
+    margin-top: 5px;   
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border: solid 1px #343434;
+    padding:3px 5px;
+    border-radius: 5px;
+}
+
+.LogIn-icons input{
+    background-color: transparent;
+    padding:8px;
+    width: 100%;
+    border: none;
+    color: white;
+    font-size:16px;
+}
+
+.LogIn-icons input:focus{
+    outline: none;
+}
+
+.rem-forgot{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.Remember{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Remember input[type="checkbox"]{
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    border: solid 1px #232124;
+    cursor: pointer;
+}
+
+
+.rem-forgot p{
+    color: #FFD700;
+}
+
+.Login-error{
+    color: red;
+    font:18px;
+    text-align: center;
+}
+
+.LogIn-btn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px 0px;
+    font-size: 16px;
+    background-color:#F8D083;
+    border:none;
+    border-radius:5px ;
+    cursor: pointer;
+}
+
+.Dont{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signin-link{
+    color: #FFD700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signin-link:hover{
+    color: aqua;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    gap:16px;
+    color:#aaa;
+    margin:15px 0;
+}
+
+.divider::before,.divider::after{
+    content: "";
+    flex:1;
+    height: 1px;
+    background: #2c2c2c;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #2c2c2c;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.google-btn:hover {
+  border-color: #c9a24d;
+  background: rgba(201, 162, 77, 0.08);
+}
+
+
+@media (max-width:768px) {
+    .SignIn-main{
+        width: 80%;
+    }
+    .SignIn-bg{
+        margin-top: 68px;
+    }
+    .LogIn-main{
+        width: 80%;
+    }
+    .LogIn-bg{
+        margin-top:68px ;
+    }
+}

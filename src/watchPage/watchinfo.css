@@ -1,0 +1,62 @@
+.Info-main {
+  display: flex;
+  gap: 24px;
+  padding: 110px 60px 60px;
+  background: #0a0b0d;
+  color: white;
+  min-height: 90vh;
+}
+.Info-thumbs { display: flex; flex-direction: column; gap: 14px; }
+.Info-thumb {
+  width: 100px; height: 100px; object-fit: cover;
+  border: 1px solid #2c2c2c; border-radius: 8px;
+  cursor: pointer; background: #111;
+}
+.Info-thumb.active { border: 2px solid #e8b84a; }
+.Info-image {
+  flex: 1.3; background: #0f1012;
+  border: 1px solid #1f1f1f; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.Info-image img { max-width: 100%; max-height: 600px; object-fit: contain; }
+.Info-details { flex: 1; }
+.Info-title { font-size: 38px; font-weight: 500; }
+.Info-price { font-size: 32px; margin: 10px 0; }
+.Info-rating { display: flex; align-items: center; gap: 4px; color: #ccc; }
+.Info-rating span { margin-left: 8px; }
+.Info-desc { color: #bbb; line-height: 1.6; margin: 18px 0; }
+.Info-label { margin: 18px 0 10px; font-size: 16px; }
+.Info-colors { display: flex; gap: 14px; }
+.Info-color {
+  width: 38px; height: 38px; border-radius: 50%;
+  border: 2px solid transparent; cursor: pointer;
+}
+.Info-color.selected { outline: 2px solid white; outline-offset: 3px; }
+.Info-qty {
+  display: inline-flex; align-items: center;
+  border: 1px solid #333; border-radius: 6px; margin-bottom: 20px;
+}
+.Info-qty button {
+  width: 46px; height: 44px; background: transparent; color: white;
+  border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.Info-qty span { width: 60px; text-align: center; }
+.Info-cart, .Info-wish {
+  width: 100%; height: 54px; margin-bottom: 14px;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  font-size: 17px; border-radius: 6px; cursor: pointer;
+}
+.Info-cart { background: #e0b565; color: #111; border: none; }
+.Info-cart:hover { background: #e8c27a; }
+.Info-wish { background: transparent; color: white; border: 1px solid #555; }
+.Info-wish:hover { border-color: #e8b84a; }
+.Info-line { border: none; border-top: 1px solid #222; margin: 24px 0; }
+.Info-sub { font-size: 20px; margin-bottom: 14px; }
+.Info-table p { display: flex; color: #ddd; margin-bottom: 10px; }
+.Info-table span { width: 170px; color: #999; }
+
+@media (max-width: 900px) {
+  .Info-main { flex-direction: column; padding: 100px 20px 40px; }
+  .Info-thumbs { flex-direction: row; }
+}

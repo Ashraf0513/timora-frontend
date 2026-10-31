@@ -1,0 +1,340 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+.Watch-message{
+    text-align: center;
+    color:white;
+    padding: 150px 20px;
+     background-color: #050505;
+}
+
+.Watch-signin-link{
+    display: inline-block;
+    margin-top:16px;
+    padding: 12px 28px;
+    background:#e8b84a;
+    color:#111;
+    border-radius: 6px;
+    text-decoration: none;
+   
+}
+
+.component{
+    background-color: black;
+    color: white;
+    border-bottom: solid 2px #282828;
+}
+
+.WatchPage-1{
+    padding: 15px 10px;
+}
+
+.WatchPage-underline{
+    width:40px;
+    height:4px;
+    background-color:gold;
+    border-radius: 5px;
+    margin-bottom:3px;
+}
+
+.WatchPage-descrip{
+    font-size: 14px;
+    color:#D8DEE9;
+}
+
+.Filter-main{
+    background-color: #050505;
+    height: fit-content;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: solid 1px #232124;
+    border-radius: 7px;
+    width:25%;
+    flex-shrink: 0;
+    position: sticky;
+}
+
+.Filter-title{
+    padding:10px 0;
+    font-size: 19px;
+}
+
+.Filter-underline{
+    width:100%;
+    height:1px;
+    background-color: #232124;
+    margin-top: 6px;
+}
+
+.Category{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Category-checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.Category-checkbox label{
+   padding-left:7px;
+   font-size:18px;
+}
+
+.Category-checkbox input[type="checkbox"]{
+    width: 16px;
+    height:16px;
+    background:transparent;
+    border: solid 1px #232124;
+    appearance: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.Category-checkbox input[type="checkbox"]:checked{
+    border-color: #D4AF37;
+    background: transparent;
+}
+
+.Category-checkbox input[type="checkbox"]:checked::after{
+    content:"\2713";
+    color:#D4AF37;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    line-height: 14px;
+}
+
+.Category-underline{
+    width:100%;
+    height:1px;
+    background-color: #232124;
+    margin-top: 6px;
+}
+
+.Pricerange-main{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding:30px 0;
+}
+
+.Pricerange-title{
+    text-align: center;
+    font-size: 18px;
+}
+
+.Pricerange-main input{
+    width: 100%;
+    cursor: pointer;
+    accent-color: #d4af37;
+    margin-top: 10px;
+}
+
+.Pricelabel{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color:#ccc;
+    margin-top: 10px;
+}
+
+.Pricerange-underline{
+    width:100%;
+    height:1px;
+    background-color: #232124;
+    margin-top: 6px;
+}
+
+.Strap{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 10px 0;
+}
+
+.Strap-checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.Strap-checkbox label{
+   padding-left:7px;
+   font-size:18px;
+}
+
+.Strap-checkbox input[type="checkbox"]{
+    width: 16px;
+    height:16px;
+    background:transparent;
+    border: solid 1px #232124;
+    appearance: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.Starp-checkbox input[type="checkbox"]:checked{
+    border-color: #D4AF37;
+    background: transparent;
+}
+
+.Strap-checkbox input[type="checkbox"]:checked::after{
+    content:"\2713";
+    color:#D4AF37;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    line-height: 14px;
+}
+
+.Strap-underline{
+    width:100%;
+    height:1px;
+    background-color: #232124;
+    margin-top: 6px;
+}
+
+
+.ClearFilter-btn{
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    border: solid 0.5px #B68F03;
+    border-radius: 5px;
+    margin-top: 20px;
+    width:35%;
+    font-size: 16px;
+}
+
+.ClearFilter-btn:hover{
+    background-color: #D8DEE9;
+    color:black;
+    transition-duration:800ms;
+}
+
+.ClearFilter-btn svg{
+    color: #D4AF37;
+}
+
+.WatchPage-2{
+    display: flex;
+}
+
+.Watch-main{
+   margin-left: 60px;
+   height:125vh;
+   padding-bottom: 30px;
+}
+
+.Watch-containers{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+    top: 0;
+    overflow: hidden;
+}
+.Watch-container{
+    width:100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    background-color: #050505;
+    padding: 0 15px;
+    padding-bottom: 20px;
+    border: solid 1px #282828;
+    border-radius: 10px;
+    position: relative;
+}
+
+.Watch-container img{
+    width:100%;
+    height: 280px;
+    display: block;
+}
+
+
+.Watch-category{
+    font-size: 15px;
+    color:#D8DEE9;
+    padding:5px 0;
+}
+
+.Watch-price{
+    padding: 5px 0;
+}
+
+.Watch-star{
+    display: flex;
+    gap:5px;
+}
+
+.Watch-star svg{
+    fill: #D4AF37;
+    color: #D4AF37;
+}
+
+.Watch-btn{
+    display: flex;
+    gap:12px;
+    margin-top: 15px;
+}
+
+.viewdetail-btn{
+    background-color: transparent;
+    border: solid 1px #B68F03;
+    padding:5px 15px;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+.viewdetail-btn:hover{
+    border: solid 1px #ccc;
+    transition-duration:1s;
+}
+
+.addtocart-btn{
+    background-color:#D4AF37;
+    padding: 5px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.addtocart-btn:hover{
+    background-color: #D8DEE9;
+    transition-duration: 800ms;
+}
+
+
+@media (max-width:768px) {
+    .Watch-main{
+        margin-left:10px;
+    }
+    .Watch-containers{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .ClearFilter-btn{
+        width:100%;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .Watch-containers{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .ClearFilter-btn{
+        width:80%;
+    }
+    .Watch-main{
+        margin:25px;
+    }
+}

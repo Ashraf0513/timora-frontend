@@ -1,0 +1,150 @@
+.features{
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    height: 200px;
+}
+
+.Contact-main{
+    background-image:url("./image/aboutcontact1.png") ;
+    background-size: 100% 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:650px;
+    border-bottom: solid 2px #FEB300;
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #F8F8F8;
+}
+
+.Contactdetail-main{
+    color: white;
+    padding:25px;
+}
+
+.Header1{
+    color: #FEB300;
+    letter-spacing: 3px;
+    font-weight:550;
+}
+
+.Header2{
+    padding: 10px 0;
+    font-size: 42px;
+}
+
+.Header2 span{
+    color: #FEB300;
+}
+
+.Header3{
+    color:#ccc
+}
+
+.Contact-icons{
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.icons{
+    padding: 6px;
+    border: solid 1px #FEB300;
+    border-radius: 20px;
+    color: #FEB300;
+}
+
+.icon-para{
+    display: flex;
+    gap:13px;
+}
+
+.Contactform-main{
+    background-color:#0B0B0B;
+    display: flex;
+    flex-direction: column;
+    width:28%;
+    height:70%;
+    margin-top: 50px;
+    margin-right:23%;
+    padding: 15px;
+    border: solid 1px #343532;
+    border-radius: 8px;
+}
+
+.Contactform-main input{
+    margin-top: 14px;
+    padding: 8px;
+    background-color: transparent;
+    border:solid 1px #343532;
+    border-radius: 5px;
+    color: white;
+}
+
+.Contactform-main select{
+    padding: 8px;
+    margin-top:14px;
+    background-color: transparent;
+    color:#ccc;
+    border: solid 1px #343532;
+}
+
+.Contactform-main textarea{
+    margin-top: 14px;
+    padding: 5px;
+    background-color: transparent;
+    border:solid 1px #343532;
+    color: #ccc;
+}
+
+.msg-btn{
+    margin-top: 30px;
+    padding:8px 0;
+    background-color: #FEB300;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+.Contactform-main input::placeholder{
+    color: #ccc;
+}
+
+.subject option{
+    background-color:#0B0B0B;
+    color: #ccc;
+}
+
+
+@media (max-width:768px) {
+    .Contact-main{
+        font-size: 13px;
+    }
+
+    .Contactform-main{
+     margin-right: 15px;
+     width:100%;
+     height: fit-content;
+     padding-bottom:35px;
+    }
+
+    .Contactdetail-matter{
+        font-size: 14px;
+    }
+
+    .Contactdetail-matter h1{
+        font-size:30px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .Contactdetail-matter h1{
+        font-size: 35px;
+    }
+    .Contactform-main{
+        width: 80%;
+        
+        transform: translatex(80px);
+    }
+}
