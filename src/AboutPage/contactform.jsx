@@ -9,7 +9,7 @@ function ContactForm(){
    const [msg,setmsg]=useState("");
 
    function handleSend(){
-      axios.post("http://localhost:5000/about",{name:name,email:email,option:option,msg:msg}).then(()=>console.log("connected"))
+      axios.post("https://timora-backend.vercel.app/about",{name:name,email:email,option:option,msg:msg}).then(()=>console.log(alert("connected"))).catch((error)=>console.log(alert(error.message)))
    }
    
     console.log(option)
