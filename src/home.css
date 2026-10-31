@@ -140,6 +140,7 @@
     transform: translatex(-88px);
     margin-top: 8px;
     cursor: pointer;
+    transform: translatex(20px);
 }
 
 .why-choose {
