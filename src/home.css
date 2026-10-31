@@ -396,6 +396,10 @@
     .CustomerSay-containers{
         gap: 5px;
     }
+
+    .OurCollection-container button{
+        transform: translatex(10px);
+    }
 }
 
 @media (min-width:769px) and (max-width:1024px) {
