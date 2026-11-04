@@ -5,9 +5,6 @@ import { onAuthStateChanged } from "firebase/auth";
 export const WatchContext = createContext();
 
 function load(key) {
-
-
-
     try {
         const saved = localStorage.getItem(key);
         return saved ? JSON.parse(saved) : [];
@@ -30,7 +27,7 @@ export function WatchProvider({ children }) {
     }, [])
 
     const [index, setindex] = useState(() =>
-        load("wishlist")
+        load("index")
 
     );
     const [cardindex, setcardindex] = useState(() =>
@@ -80,7 +77,7 @@ export function WatchProvider({ children }) {
 
 
     function removeCartIndex(pos) {
-        setcardindex((prev) => prev.filter((_, i) => i !== pos))
+        setcardindex((prev) => prev.filter((x) => x.id !== pos))
     }
 
     function handleCheck(cat) {

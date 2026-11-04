@@ -24,7 +24,7 @@ function Nav() {
                 setlog(false)
             }
         })
-    })
+    },[])
 
     function logout(){
         signOut(auth)
