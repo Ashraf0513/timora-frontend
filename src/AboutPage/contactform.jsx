@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios"
+import { reload } from "firebase/auth";
 
 function ContactForm(){
 
@@ -9,7 +10,7 @@ function ContactForm(){
    const [msg,setmsg]=useState("");
 
    function handleSend(){
-      axios.post("https://timora-backend.vercel.app/about",{name:name,email:email,option:option,msg:msg}).then(()=>console.log(alert("Thanks for your response"))).catch((error)=>console.log(alert(error.message)))
+      axios.post("https://timora-backend.vercel.app/about",{name:name,email:email,option:option,msg:msg}).then(()=>console.log(alert("Thanks for your response")),reload()).catch((error)=>console.log(alert(error.message)))
    }
    
     console.log(option)
